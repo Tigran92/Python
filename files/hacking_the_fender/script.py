@@ -14,4 +14,14 @@ with open(path) as password_file:
 
   for password_row in password_csv:
 
-    print(password_row['Username'])
+      compromised_users.append(password_row['Username'])
+
+  print(compromised_users)
+
+# Reading a File
+path = os.path.join(my_path, "../hacking_the_fender/compromised_users.txt")
+with open(path, 'w') as compromised_user_file:
+
+  for users in compromised_users:
+
+    compromised_user_file.write(users)
