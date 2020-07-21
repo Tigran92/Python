@@ -72,3 +72,14 @@ class VehicleInsurance(InsurancePolicy):
 class HomeInsurance(InsurancePolicy):
   def get_rate(self):
     return self.price_of_insured_item * .00005
+
+
+
+# Polymorphism
+a_list = [1, 18, 32, 12]
+a_dict = {'value': True}
+a_string = "Polymorphism is cool!"
+
+print(len(a_list))
+print(len(a_dict))
+print(len(a_string))
