@@ -117,3 +117,10 @@ class LawFirm:
     return lawyer in self.lawyers
 
 d_and_p = LawFirm("Injury", ["Donelli", "Paderewski"])
+
+
+
+class SortedList(list):
+  def append(self, value):
+    super().append(value)
+    self.sort()
